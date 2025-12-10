@@ -1,0 +1,33 @@
+/* BRAND COLORS */
+
+:root{
+    --yellow: #f7c843;
+    --charcoal: #1f1f1f;
+
+    --light: #f8f8f8;
+    --white: #ffffff;
+    --gray: #cccccc;
+}
+
+/* GENERAL RESET */
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: var(--light);
+    color: var(--charcoal);
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar{
+    background: var(--charcoal);
+    color: var(--white);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
