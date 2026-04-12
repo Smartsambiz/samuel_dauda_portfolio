@@ -1,0 +1,32 @@
+export const projects = [
+  {
+    id: 1,
+    title: "VTU Services Platform",
+    description: "A full-stack web app for purchasing airtime, data bundles, TV subscriptions and electricity units via the VTpass API.",
+    tech: ["React", "Node.js", "TypeScript", "REST API"],
+    image: "/images/project-1.png",
+    live: "#",
+    github: "https://github.com/Smartsambiz/shamsub",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Teacher Attendance System",
+    description: "A complete attendance management system for schools, allowing teachers to log attendance via mobile and admins to view reports.",
+    tech: ["React", "Python", "Node.js", "Database"],
+    image: "/images/project-2.jpg",
+    live: "#",
+    github: "https://github.com/Smartsambiz/teacher-attendance-app",
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Snap solve AI",
+    description: "An AI-Powered app that allows students to snap or type a JAMB question and receive an instant answer, along with a detailed explanation of the solution.  ",
+    tech: ["React", "Llama", "Node.js", "POSTGRESQL"],
+    image: "/images/snapsolve_ai_web.jfif",
+    live: "https://snapsolveai-xi.vercel.app/",
+    github: "https://github.com/Smartsambiz/snap-solve-ai",
+    featured: false,
+  },
+];
