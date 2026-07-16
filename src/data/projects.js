@@ -8,6 +8,7 @@ export const projects = [
     live: "https://chatflow-sable.vercel.app/",
     github: "#",
     featured: true,
+    inProgress: true,
     highlight: "An AI-powered customer communication platform that automates business conversations on WhatsApp.",
     features: [
       "WhatsApp Business API integration",
@@ -101,11 +102,11 @@ export const projects = [
     title: "VTU Services Platform",
     description: "A modern digital payment platform for purchasing airtime, data bundles, and utility payments with Paystack integration.",
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Paystack"],
-    image: "/images/project-1.png",
+    image: "/images/vtu-project.png",
     live: "https://shamsub.com.ng/",
     github: "https://github.com/Smartsambiz/shamsub",
     featured: false,
-    inProgress: true,
+    inProgress: false,
     highlight: "Modern digital payment platform with seamless Paystack integration.",
     features: [
       "Authentication",
