@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
 import styles from './Hero.module.css'
 
-const roles = ['Software Developer', 'Frontend Engineer', 'React Developer', 'Problem Solver']
+const roles = ['Full-Stack Developer', 'Backend Engineer', 'React Developer', 'AI Application Developer', 'Node.js Developer']
 
 export default function Hero() {
   const [roleIndex, setRoleIndex] = useState(0)
@@ -61,35 +61,35 @@ export default function Hero() {
           </div>
 
           <p className={styles.tagline}>
-            I build clean, functional digital solutions — from responsive frontends to full-stack web apps.
+            I design and build modern web applications from frontend to backend, creating scalable APIs, AI-powered automation tools, business platforms, and intuitive user experiences using React, Node.js, Express.js, MongoDB, and modern JavaScript technologies.
           </p>
 
           <div className={styles.ctas}>
             <Link to="projects" smooth duration={500} offset={-80}>
               <button className="btn-primary">
-                View Projects →
+                View My Projects →
               </button>
             </Link>
-            <a href="/Samuel_Dauda_CV.pdf" download>
+            <Link to="contact" smooth duration={500} offset={-80}>
               <button className="btn-outline">
-                Download CV
+                Let's Build Together
               </button>
-            </a>
+            </Link>
           </div>
 
           <div className={styles.stats}>
             <div className={styles.stat}>
               <span className={styles.statNum}>4+</span>
-              <span className={styles.statLabel}>Years coding</span>
+              <span className={styles.statLabel}>Years building</span>
+            </div>
+            <div className={styles.statDivider} />
+            <div className={styles.stat}>
+              <span className={styles.statNum}>12+</span>
+              <span className={styles.statLabel}>Projects shipped</span>
             </div>
             <div className={styles.statDivider} />
             <div className={styles.stat}>
               <span className={styles.statNum}>10+</span>
-              <span className={styles.statLabel}>Projects built</span>
-            </div>
-            <div className={styles.statDivider} />
-            <div className={styles.stat}>
-              <span className={styles.statNum}>6</span>
               <span className={styles.statLabel}>Technologies</span>
             </div>
           </div>

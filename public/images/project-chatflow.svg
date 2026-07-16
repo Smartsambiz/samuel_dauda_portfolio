@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#161616"/>
+
+  <!-- Phone frame -->
+  <rect x="130" y="20" width="340" height="360" rx="24" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="2"/>
+
+  <!-- Status bar -->
+  <rect x="130" y="20" width="340" height="50" rx="24" fill="#252525"/>
+  <rect x="130" y="44" width="340" height="26" fill="#252525"/>
+
+  <!-- AI indicator dot -->
+  <circle cx="160" cy="40" r="8" fill="#f7c843"/>
+  <rect x="174" y="36" width="60" height="8" rx="4" fill="#f7c843"/>
+
+  <!-- Three-dot menu -->
+  <circle cx="430" cy="40" r="3" fill="#666"/>
+  <circle cx="443" cy="40" r="3" fill="#666"/>
+  <circle cx="456" cy="40" r="3" fill="#666"/>
+
+  <!-- Received message bubble (left) -->
+  <rect x="150" y="75" width="180" height="36" rx="12" fill="#2a2a2a"/>
+  <path d="M150 93 L150 105 L162 93" fill="#2a2a2a"/>
+  <rect x="160" y="85" width="70" height="6" rx="3" fill="#555"/>
+  <rect x="160" y="95" width="40" height="6" rx="3" fill="#444"/>
+
+  <!-- Sent message bubble (right) -->
+  <rect x="260" y="125" width="180" height="36" rx="12" fill="#f7c843"/>
+  <path d="M440 143 L440 155 L428 143" fill="#f7c843"/>
+  <rect x="280" y="135" width="80" height="6" rx="3" fill="#1e1e1e" opacity="0.5"/>
+  <rect x="280" y="145" width="50" height="6" rx="3" fill="#1e1e1e" opacity="0.3"/>
+
+  <!-- Read receipts (double check) -->
+  <rect x="408" y="148" width="20" height="6" rx="3" fill="#161616" opacity="0.4"/>
+
+  <!-- AI typing indicator -->
+  <rect x="150" y="175" width="120" height="36" rx="12" fill="#2a2a2a"/>
+  <path d="M150 193 L150 205 L162 193" fill="#2a2a2a"/>
+  <circle cx="175" cy="193" r="5" fill="#f7c843" opacity="0.6"/>
+  <circle cx="192" cy="193" r="5" fill="#f7c843" opacity="0.4"/>
+  <circle cx="209" cy="193" r="5" fill="#f7c843" opacity="0.2"/>
+  <rect x="170" y="185" width="12" height="6" rx="3" fill="#f7c843"/>
+
+  <!-- Received message bubble 2 -->
+  <rect x="150" y="225" width="200" height="44" rx="12" fill="#2a2a2a"/>
+  <path d="M150 249 L150 263 L162 249" fill="#2a2a2a"/>
+  <rect x="160" y="237" width="90" height="6" rx="3" fill="#555"/>
+  <rect x="160" y="249" width="120" height="6" rx="3" fill="#555"/>
+  <rect x="160" y="259" width="60" height="6" rx="3" fill="#444"/>
+
+  <!-- Sent message bubble 2 -->
+  <rect x="280" y="285" width="160" height="28" rx="12" fill="#f7c843"/>
+  <path d="M440 297 L440 307 L428 297" fill="#f7c843"/>
+  <rect x="300" y="293" width="60" height="6" rx="3" fill="#1e1e1e" opacity="0.5"/>
+
+  <!-- Chat input bar -->
+  <rect x="140" y="340" width="320" height="40" rx="20" fill="#2a2a2a"/>
+  <rect x="150" y="350" width="230" height="8" rx="4" fill="#444"/>
+  <rect x="155" y="354" width="60" height="4" rx="2" fill="#666"/>
+  <!-- Send button -->
+  <circle cx="430" cy="360" r="14" fill="#f7c843"/>
+  <polygon points="427,356 427,364 435,360" fill="#161616"/>
+  <!-- Attachment icon -->
+  <rect x="402" y="356" width="6" height="6" rx="1" fill="#888" transform="rotate(45 405 359)"/>
+  <circle cx="405" cy="359" r="2" fill="none" stroke="#888" stroke-width="1"/>
+</svg>

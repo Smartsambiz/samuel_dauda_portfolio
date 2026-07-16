@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="600" height="400" fill="#161616"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="600" height="56" fill="#1a1a1a"/>
+  <rect x="20" y="18" width="100" height="10" rx="5" fill="#f7c843"/>
+  <rect x="20" y="34" width="70" height="6" rx="3" fill="#444"/>
+  <circle cx="550" cy="24" r="10" fill="#2a2a2a"/>
+  <rect x="546" y="22" width="8" height="4" rx="2" fill="#f7c843"/>
+
+  <!-- Summary stats row -->
+  <!-- Total students -->
+  <rect x="16" y="72" width="136" height="56" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="28" y="84" width="50" height="6" rx="3" fill="#555"/>
+  <rect x="28" y="98" width="40" height="16" rx="4" fill="#f7c843"/>
+  <rect x="28" y="116" width="40" height="4" rx="2" fill="#444"/>
+
+  <!-- Present -->
+  <rect x="162" y="72" width="136" height="56" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="174" y="84" width="40" height="6" rx="3" fill="#555"/>
+  <rect x="174" y="98" width="40" height="16" rx="4" fill="#4caf50"/>
+  <circle cx="260" cy="106" r="6" fill="#4caf50"/>
+  <circle cx="260" cy="106" r="2" fill="#1e1e1e"/>
+  <rect x="174" y="116" width="50" height="4" rx="2" fill="#444"/>
+
+  <!-- Absent -->
+  <rect x="308" y="72" width="136" height="56" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="320" y="84" width="40" height="6" rx="3" fill="#555"/>
+  <rect x="320" y="98" width="40" height="16" rx="4" fill="#ff5252"/>
+  <circle cx="406" cy="106" r="6" fill="#ff5252"/>
+  <line x1="403" y1="103" x2="409" y2="109" stroke="#1e1e1e" stroke-width="1.5"/>
+  <line x1="409" y1="103" x2="403" y2="109" stroke="#1e1e1e" stroke-width="1.5"/>
+  <rect x="320" y="116" width="50" height="4" rx="2" fill="#444"/>
+
+  <!-- Attendance rate -->
+  <rect x="454" y="72" width="130" height="56" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="466" y="84" width="50" height="6" rx="3" fill="#555"/>
+  <rect x="466" y="98" width="40" height="16" rx="4" fill="#f7c843"/>
+  <rect x="466" y="116" width="40" height="4" rx="2" fill="#444"/>
+
+  <!-- Filter bar -->
+  <rect x="16" y="142" width="568" height="36" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="28" y="154" width="60" height="8" rx="4" fill="#f7c843"/>
+  <rect x="100" y="154" width="60" height="8" rx="4" fill="#2a2a2a"/>
+  <rect x="172" y="154" width="60" height="8" rx="4" fill="#2a2a2a"/>
+  <rect x="244" y="154" width="60" height="8" rx="4" fill="#2a2a2a"/>
+  <!-- Search icon -->
+  <circle cx="540" cy="160" r="8" fill="#2a2a2a"/>
+  <rect x="545" y="165" width="6" height="2" rx="1" fill="#666" transform="rotate(45 548 166)"/>
+
+  <!-- Student grid -->
+  <!-- Row 1 -->
+  <!-- Student 1 - present -->
+  <rect x="16" y="192" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="16" y="192" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="60" cy="222" r="16" fill="#3a3a3a"/>
+  <circle cx="60" cy="222" r="8" fill="#f7c843" opacity="0.5"/>
+  <rect x="30" y="266" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="76" cy="270" r="4" fill="#4caf50"/>
+
+  <!-- Student 2 - present -->
+  <rect x="114" y="192" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="114" y="192" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="158" cy="222" r="16" fill="#3a3a3a"/>
+  <circle cx="158" cy="222" r="8" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="128" y="266" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="174" cy="270" r="4" fill="#4caf50"/>
+
+  <!-- Student 3 - absent -->
+  <rect x="212" y="192" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="212" y="192" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="256" cy="222" r="16" fill="#3a3a3a"/>
+  <circle cx="256" cy="222" r="8" fill="#ff5252" opacity="0.5"/>
+  <rect x="226" y="266" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="272" cy="270" r="4" fill="#ff5252"/>
+
+  <!-- Student 4 - present -->
+  <rect x="310" y="192" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="310" y="192" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="354" cy="222" r="16" fill="#3a3a3a"/>
+  <circle cx="354" cy="222" r="8" fill="#f7c843" opacity="0.5"/>
+  <rect x="324" y="266" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="370" cy="270" r="4" fill="#4caf50"/>
+
+  <!-- Student 5 - present -->
+  <rect x="408" y="192" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="408" y="192" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="452" cy="222" r="16" fill="#3a3a3a"/>
+  <circle cx="452" cy="222" r="8" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="422" y="266" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="468" cy="270" r="4" fill="#4caf50"/>
+
+  <!-- Student 6 - absent -->
+  <rect x="506" y="192" width="78" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="506" y="192" width="78" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="545" cy="222" r="16" fill="#3a3a3a"/>
+  <circle cx="545" cy="222" r="8" fill="#ff5252" opacity="0.5"/>
+  <rect x="518" y="266" width="54" height="5" rx="2.5" fill="#555"/>
+  <circle cx="560" cy="270" r="4" fill="#ff5252"/>
+
+  <!-- Row 2 -->
+  <!-- Student 7 -->
+  <rect x="16" y="292" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="16" y="292" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="60" cy="322" r="16" fill="#3a3a3a"/>
+  <circle cx="60" cy="322" r="8" fill="#f7c843" opacity="0.5"/>
+  <rect x="30" y="366" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="76" cy="370" r="4" fill="#4caf50"/>
+
+  <!-- Student 8 -->
+  <rect x="114" y="292" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="114" y="292" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="158" cy="322" r="16" fill="#3a3a3a"/>
+  <circle cx="158" cy="322" r="8" fill="#ff5252" opacity="0.5"/>
+  <rect x="128" y="366" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="174" cy="370" r="4" fill="#ff5252"/>
+
+  <!-- Student 9 -->
+  <rect x="212" y="292" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="212" y="292" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="256" cy="322" r="16" fill="#3a3a3a"/>
+  <circle cx="256" cy="322" r="8" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="226" y="366" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="272" cy="370" r="4" fill="#4caf50"/>
+
+  <!-- Student 10 -->
+  <rect x="310" y="292" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="310" y="292" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="354" cy="322" r="16" fill="#3a3a3a"/>
+  <circle cx="354" cy="322" r="8" fill="#f7c843" opacity="0.5"/>
+  <rect x="324" y="366" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="370" cy="370" r="4" fill="#4caf50"/>
+
+  <!-- Student 11 -->
+  <rect x="408" y="292" width="88" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="408" y="292" width="88" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="452" cy="322" r="16" fill="#3a3a3a"/>
+  <circle cx="452" cy="322" r="8" fill="#f7c843" opacity="0.5"/>
+  <rect x="422" y="366" width="60" height="5" rx="2.5" fill="#555"/>
+  <circle cx="468" cy="370" r="4" fill="#4caf50"/>
+
+  <!-- Student 12 -->
+  <rect x="506" y="292" width="78" height="88" rx="10" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+  <rect x="506" y="292" width="78" height="60" rx="10" fill="#2a2a2a"/>
+  <circle cx="545" cy="322" r="16" fill="#3a3a3a"/>
+  <circle cx="545" cy="322" r="8" fill="#4fc3f7" opacity="0.5"/>
+  <rect x="518" y="366" width="54" height="5" rx="2.5" fill="#555"/>
+  <circle cx="560" cy="370" r="4" fill="#4caf50"/>
+</svg>

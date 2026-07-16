@@ -20,7 +20,7 @@ export default function Projects() {
           {projects.map((project, i) => (
             <motion.div
               key={project.id}
-              className={styles.card}
+              className={`${styles.card} ${project.featured ? styles.featured : ''}`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-40px' }}
@@ -30,6 +30,9 @@ export default function Projects() {
                 <img src={project.image} alt={project.title} className={styles.image} />
                 {project.featured && (
                   <span className={styles.featuredBadge}>Featured</span>
+                )}
+                {project.inProgress && (
+                  <span className={styles.progressBadge}>In Progress</span>
                 )}
                 <div className={styles.overlay}>
                   <a href={project.live} className={styles.overlayBtn} target="_blank" rel="noreferrer">
@@ -43,6 +46,7 @@ export default function Projects() {
 
               <div className={styles.body}>
                 <h3 className={styles.title}>{project.title}</h3>
+                <p className={styles.highlight}>{project.highlight}</p>
                 <p className={styles.desc}>{project.description}</p>
                 <div className={styles.tech}>
                   {project.tech.map(t => (

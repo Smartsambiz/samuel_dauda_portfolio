@@ -6,6 +6,10 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 }
 
+const frontendTech = ['React', 'JavaScript', 'HTML5', 'CSS3']
+const backendTech = ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL (learning)']
+const otherTech = ['REST APIs', 'Git & GitHub', 'Postman', 'Docker (learning)', 'Railway', 'AI Integrations', 'Webhooks', 'API Integrations']
+
 export default function About() {
   return (
     <section id="about" className={styles.section}>
@@ -37,33 +41,35 @@ export default function About() {
         >
           <motion.p className="section-label" variants={fadeUp}>About Me</motion.p>
           <motion.h2 className="section-title" style={{ marginBottom: 24 }} variants={fadeUp}>
-            Turning ideas into<br />
-            <em style={{ color: 'var(--yellow)', fontStyle: 'normal' }}>working software</em>
+            Full-Stack Developer<br />
+            <em style={{ color: 'var(--yellow)', fontStyle: 'normal' }}>building complete products</em>
           </motion.h2>
 
           <motion.p className={styles.bio} variants={fadeUp}>
-            Hi, I'm Samuel Musa Dauda — a software developer from Nigeria with a passion for building clean,
-            functional, and user-friendly digital products. I enjoy turning ideas into reality through code,
-            whether it's a landing page or a full-stack application.
+            I'm an early-career Full-Stack Software Developer who enjoys building complete products — from beautiful user interfaces to scalable backend services. I specialize in creating full-stack web applications, REST APIs, AI-powered systems, and business automation tools using modern JavaScript technologies.
           </motion.p>
           <motion.p className={styles.bio} variants={fadeUp}>
-            My focus is on writing maintainable code, designing intuitive interfaces, and delivering
-            applications that solve real problems. I'm always learning and pushing my skills forward.
+            I have hands-on experience building payment integrations, authentication systems, database-driven applications, workflow automation, and deploying production-ready solutions. I'm always learning and pushing my skills to build software that solves real problems.
           </motion.p>
 
-          <motion.div className={styles.facts} variants={fadeUp}>
-            <div className={styles.fact}>
-              <span className={styles.factIcon}>🎓</span>
-              <span>Self-taught developer since 2021</span>
-              <span>TsAcademy - Software Engineering</span>
+          <motion.div className={styles.techStack} variants={fadeUp}>
+            <div className={styles.techGroup}>
+              <span className={styles.techGroupLabel}>Frontend</span>
+              <div className={styles.techTags}>
+                {frontendTech.map(t => <span key={t} className={styles.techTag}>{t}</span>)}
+              </div>
             </div>
-            <div className={styles.fact}>
-              <span className={styles.factIcon}>🚀</span>
-              <span>10+ projects shipped</span>
+            <div className={styles.techGroup}>
+              <span className={styles.techGroupLabel}>Backend</span>
+              <div className={styles.techTags}>
+                {backendTech.map(t => <span key={t} className={styles.techTag}>{t}</span>)}
+              </div>
             </div>
-            <div className={styles.fact}>
-              <span className={styles.factIcon}>🌍</span>
-              <span>Open to remote opportunities worldwide</span>
+            <div className={styles.techGroup}>
+              <span className={styles.techGroupLabel}>Other</span>
+              <div className={styles.techTags}>
+                {otherTech.map(t => <span key={t} className={styles.techTag}>{t}</span>)}
+              </div>
             </div>
           </motion.div>
 
