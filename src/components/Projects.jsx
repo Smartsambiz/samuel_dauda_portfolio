@@ -35,12 +35,16 @@ export default function Projects() {
                   <span className={styles.progressBadge}>In Progress</span>
                 )}
                 <div className={styles.overlay}>
-                  <a href={project.live} className={styles.overlayBtn} target="_blank" rel="noreferrer">
-                    Live Demo ↗
-                  </a>
-                  <a href={project.github} className={styles.overlayBtn} target="_blank" rel="noreferrer">
-                    GitHub ↗
-                  </a>
+                  {project.live && (
+                    <a href={project.live} className={styles.overlayBtn} target="_blank" rel="noreferrer">
+                      Live Demo ↗
+                    </a>
+                  )}
+                  {project.github && (
+                    <a href={project.github} className={styles.overlayBtn} target="_blank" rel="noreferrer">
+                      GitHub ↗
+                    </a>
+                  )}
                 </div>
               </div>
 
