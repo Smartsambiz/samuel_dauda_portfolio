@@ -1,45 +1,11 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
 import styles from './Hero.module.css'
 
-const roles = ['Full-Stack Developer', 'Backend Engineer', 'React Developer', 'AI Application Developer', 'Node.js Developer']
-
 export default function Hero() {
-  const [roleIndex, setRoleIndex] = useState(0)
-  const [displayed, setDisplayed] = useState('')
-  const [typing, setTyping] = useState(true)
-
-  useEffect(() => {
-    const current = roles[roleIndex]
-    let timeout
-
-    if (typing) {
-      if (displayed.length < current.length) {
-        timeout = setTimeout(() => {
-          setDisplayed(current.slice(0, displayed.length + 1))
-        }, 80)
-      } else {
-        timeout = setTimeout(() => setTyping(false), 2000)
-      }
-    } else {
-      if (displayed.length > 0) {
-        timeout = setTimeout(() => {
-          setDisplayed(displayed.slice(0, -1))
-        }, 40)
-      } else {
-        setRoleIndex(i => (i + 1) % roles.length)
-        setTyping(true)
-      }
-    }
-
-    return () => clearTimeout(timeout)
-  }, [displayed, typing, roleIndex])
-
   return (
     <section id="hero" className={styles.hero}>
       <div className={styles.grid}>
-        {/* Left */}
         <motion.div
           className={styles.left}
           initial={{ opacity: 0, y: 30 }}
@@ -47,34 +13,37 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: 'easeOut' }}
         >
           <p className={styles.greeting}>
-            <span className={styles.wave}>👋</span> Hello, I'm
+            <span className={styles.wave}>👋</span> AI Product Developer
           </p>
 
           <h1 className={styles.name}>
-            Samuel<br />
-            <span className={styles.nameAccent}>Musa Dauda</span>
+            I build AI-powered products that make work easier.
           </h1>
 
-          <div className={styles.roleRow}>
-            <span className={styles.roleText}>{displayed}</span>
-            <span className={styles.cursor}>|</span>
-          </div>
-
           <p className={styles.tagline}>
-            I design and build modern web applications from frontend to backend, creating scalable APIs, AI-powered automation tools, business platforms, and intuitive user experiences using React, Node.js, Express.js, MongoDB, and modern JavaScript technologies.
+            I design and build web applications and automation tools that integrate AI to solve practical problems and simplify everyday work.
           </p>
 
           <div className={styles.ctas}>
             <Link to="projects" smooth duration={500} offset={-80}>
               <button className="btn-primary">
-                View My Projects →
+                View My Work →
               </button>
             </Link>
-            <Link to="contact" smooth duration={500} offset={-80}>
-              <button className="btn-outline">
-                Let's Build Together
-              </button>
-            </Link>
+            <a
+              href="https://github.com/Smartsambiz"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+            >
+              GitHub →
+            </a>
+          </div>
+
+          <div className={styles.quickLinks}>
+            <a href="https://drive.google.com/file/d/1eS_7zedIaUpZhHKlEU8bLg3n3Ur7zItr/view?usp=sharing" target="_blank" rel="noreferrer" className={styles.quickLink}>Resume</a>
+            <a href="https://github.com/Smartsambiz" target="_blank" rel="noreferrer" className={styles.quickLink}>GitHub</a>
+            <a href="https://www.linkedin.com/in/samuelmusadauda/" target="_blank" rel="noreferrer" className={styles.quickLink}>LinkedIn</a>
           </div>
 
           <div className={styles.stats}>
@@ -90,12 +59,11 @@ export default function Hero() {
             <div className={styles.statDivider} />
             <div className={styles.stat}>
               <span className={styles.statNum}>10+</span>
-              <span className={styles.statLabel}>Technologies</span>
+              <span className={styles.statLabel}>Tools used</span>
             </div>
           </div>
         </motion.div>
 
-        {/* Right */}
         <motion.div
           className={styles.right}
           initial={{ opacity: 0, scale: 0.9 }}
@@ -116,17 +84,6 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div
-        className={styles.scrollHint}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-      >
-        <div className={styles.scrollLine} />
-        <span>scroll</span>
-      </motion.div>
     </section>
   )
 }

@@ -1,7 +1,7 @@
 import { Link } from 'react-scroll'
 import styles from './Footer.module.css'
 
-const navLinks = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
+const navLinks = ['About', 'Projects', 'Process', 'Engineering', 'Contact']
 
 export default function Footer() {
   const year = new Date().getFullYear()

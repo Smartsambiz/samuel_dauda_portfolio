@@ -6,15 +6,10 @@ const fadeUp = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 }
 
-const frontendTech = ['React', 'JavaScript', 'HTML5', 'CSS3']
-const backendTech = ['Node.js', 'Express.js', 'MongoDB', 'PostgreSQL (learning)']
-const otherTech = ['REST APIs', 'Git & GitHub', 'Postman', 'Docker (learning)', 'Railway', 'AI Integrations', 'Webhooks', 'API Integrations']
-
 export default function About() {
   return (
     <section id="about" className={styles.section}>
       <div className={`container ${styles.inner}`}>
-        {/* Left */}
         <motion.div
           className={styles.left}
           initial="hidden"
@@ -31,7 +26,6 @@ export default function About() {
           </div>
         </motion.div>
 
-        {/* Right */}
         <motion.div
           className={styles.right}
           initial="hidden"
@@ -39,49 +33,36 @@ export default function About() {
           viewport={{ once: true, margin: '-80px' }}
           variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
         >
-          <motion.p className="section-label" variants={fadeUp}>About Me</motion.p>
+          <motion.p className="section-label" variants={fadeUp}>About</motion.p>
           <motion.h2 className="section-title" style={{ marginBottom: 24 }} variants={fadeUp}>
-            Full-Stack Developer<br />
-            <em style={{ color: 'var(--yellow)', fontStyle: 'normal' }}>building complete products</em>
+            I build practical software that helps people and businesses work better.
           </motion.h2>
 
           <motion.p className={styles.bio} variants={fadeUp}>
-            I'm an early-career Full-Stack Software Developer who enjoys building complete products — from beautiful user interfaces to scalable backend services. I specialize in creating full-stack web applications, REST APIs, AI-powered systems, and business automation tools using modern JavaScript technologies.
+            I’m a software developer focused on building useful products with AI, automation, and modern web technologies. I enjoy taking repetitive, inefficient, or difficult work and turning it into software that makes the process simpler.
           </motion.p>
           <motion.p className={styles.bio} variants={fadeUp}>
-            I have hands-on experience building payment integrations, authentication systems, database-driven applications, workflow automation, and deploying production-ready solutions. I'm always learning and pushing my skills to build software that solves real problems.
+            My background in teaching shaped how I think about software: break complex problems down, understand the person using the system, and build solutions that are clear, useful, and intentional.
           </motion.p>
 
-          <motion.div className={styles.techStack} variants={fadeUp}>
-            <div className={styles.techGroup}>
-              <span className={styles.techGroupLabel}>Frontend</span>
-              <div className={styles.techTags}>
-                {frontendTech.map(t => <span key={t} className={styles.techTag}>{t}</span>)}
-              </div>
-            </div>
-            <div className={styles.techGroup}>
-              <span className={styles.techGroupLabel}>Backend</span>
-              <div className={styles.techTags}>
-                {backendTech.map(t => <span key={t} className={styles.techTag}>{t}</span>)}
-              </div>
-            </div>
-            <div className={styles.techGroup}>
-              <span className={styles.techGroupLabel}>Other</span>
-              <div className={styles.techTags}>
-                {otherTech.map(t => <span key={t} className={styles.techTag}>{t}</span>)}
-              </div>
-            </div>
+          <motion.div className={styles.ctaRow} variants={fadeUp}>
+            <a
+              href="https://drive.google.com/file/d/1eS_7zedIaUpZhHKlEU8bLg3n3Ur7zItr/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-primary"
+            >
+              Resume →
+            </a>
+            <a
+              href="https://www.linkedin.com/in/samuelmusadauda/"
+              target="_blank"
+              rel="noreferrer"
+              className="btn-outline"
+            >
+              LinkedIn →
+            </a>
           </motion.div>
-
-          <motion.a
-            href="https://drive.google.com/file/d/1eS_7zedIaUpZhHKlEU8bLg3n3Ur7zItr/view?usp=sharing"
-            download
-            className="btn-primary"
-            style={{ display: 'inline-flex', marginTop: 8 }}
-            variants={fadeUp}
-          >
-            Download CV ↓
-          </motion.a>
         </motion.div>
       </div>
     </section>

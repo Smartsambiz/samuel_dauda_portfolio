@@ -21,8 +21,8 @@ const contactInfo = [
 
 const socials = [
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/samuelmusadauda/' },
-  { name: 'GitHub',   href: 'https://github.com/Smartsambiz' },
-  { name: 'X',        href: 'https://x.com/SamueldSmart' },
+  { name: 'GitHub', href: 'https://github.com/Smartsambiz' },
+  { name: 'Resume', href: 'https://drive.google.com/file/d/1eS_7zedIaUpZhHKlEU8bLg3n3Ur7zItr/view?usp=sharing' },
   { name: 'WhatsApp', href: 'https://wa.me/2348146630559' },
 ]
 
@@ -76,7 +76,7 @@ export default function Contact() {
         <motion.h2 className="section-title"
           initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.5 }}>
-          Let's work together
+          Have a problem worth solving?
         </motion.h2>
 
         <div className={styles.grid}>
@@ -88,8 +88,7 @@ export default function Contact() {
             viewport={{ once: true }} transition={{ duration: 0.5 }}
           >
             <p className={styles.infoText}>
-              Have a project in mind, want to collaborate, or just want to say hi?
-              Fill in the form and I'll get back to you within 24 hours.
+              Have a problem worth solving? I build web applications, AI-powered tools, and automation systems for people and businesses that want to make their work easier.
             </p>
 
             <div className={styles.contactItems}>

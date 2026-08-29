@@ -3,7 +3,7 @@ import { Link } from 'react-scroll'
 import { motion, AnimatePresence } from 'framer-motion'
 import styles from './Navbar.module.css'
 
-const navLinks = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
+const navLinks = ['About', 'Projects', 'Process', 'Engineering', 'Contact']
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -59,7 +59,7 @@ export default function Navbar() {
             offset={-80}
             className={styles.hireCta}
           >
-            Hire Me
+            Start a Project
           </Link>
 
           {/* Hamburger */}
@@ -112,7 +112,7 @@ export default function Navbar() {
               className={styles.mobileCta}
               onClick={() => setMenuOpen(false)}
             >
-              Hire Me
+              Start a Project
             </Link>
           </motion.div>
         )}
